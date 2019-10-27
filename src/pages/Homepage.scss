@@ -5,3 +5,53 @@
   display: flex;
   justify-content: center;
 }
+
+.card {
+  &__logo {
+    width: 8rem;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  &__company-name {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
+
+  &__event-name {
+    margin-top: 0.7rem;
+    font-size: 2.5rem;
+  }
+
+  &__event-details {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+
+    &-row {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-icon-container {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-icon {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__event-description {
+    font-size: 1.9rem;
+  }
+}
