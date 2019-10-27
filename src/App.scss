@@ -1,0 +1,40 @@
+// COLOR VARIABLES
+$color-grey-light: #fbfcfd;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 25em; // 400px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  outline: none;
+  width: 100%;
+  background-color: $color-grey-light;
+}
+
+.container {
+  padding: 7rem 7rem;
+  width: 100%;
+}

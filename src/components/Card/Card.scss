@@ -1,0 +1,21 @@
+$color-black: #000000;
+
+.card {
+  height: 80vh;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+
+  &__event-info {
+    width: 30%;
+    margin-right: 1.5rem;
+  }
+
+  &__calendar {
+    width: 50%;
+  }
+
+  &__content {
+    padding: 3rem;
+  }
+}
