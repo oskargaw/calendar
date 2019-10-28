@@ -2,6 +2,9 @@ $color-blue: #3fa2f8;
 $color-black: #000000;
 $color-white: #ffffff;
 
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+
 .card {
   &__form-input--select {
     background: none;
@@ -17,6 +20,14 @@ $color-white: #ffffff;
 
     &:focus {
       outline: none;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 70%;
     }
   }
 
