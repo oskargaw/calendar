@@ -4,8 +4,7 @@ import { faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../Card/Card";
 import CalendarGrid from "../CalendarGrid/CalendarGrid";
-
-import { hours } from "../../data/data";
+import HoursList from "../HoursList/HoursList";
 
 import "./CardCalendar.scss";
 
@@ -68,20 +67,8 @@ const CardCalendar = () => {
             </select>
           </div>
         </div>
-        <div className="card__calendar-content-hours">
-          <div className="card__calendar-content-title">
-            Friday, September 20
-          </div>
-          <div className="card__calendar-content-hours-container">
-            {hours
-              ? hours.map(hour => (
-                  <div key={hour} className="card__calendar-content-hours-item">
-                    {hour}
-                  </div>
-                ))
-              : null}
-          </div>
-        </div>
+
+        <HoursList />
       </div>
     </Card>
   );

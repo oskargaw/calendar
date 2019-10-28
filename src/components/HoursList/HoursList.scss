@@ -1,0 +1,45 @@
+$color-blue: #3fa2f8;
+$color-black: #000000;
+$color-white: #ffffff;
+
+.card {
+  &__calendar-content {
+    &-hours {
+      width: 30%;
+
+      &-container {
+        height: 100%;
+        overflow: scroll;
+        padding-top: 3rem;
+      }
+
+      &-item {
+        width: 100%;
+        border: solid $color-blue 1px;
+        border-radius: 0.5rem;
+        color: $color-blue;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 0;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+
+        &:not(:last-child) {
+          margin-bottom: 0.7rem;
+        }
+
+        &:hover {
+          background-color: rgba($color-blue, 0.2);
+        }
+
+        &:active {
+          color: $color-white;
+          font-weight: bold;
+          background-color: $color-blue;
+        }
+      }
+    }
+  }
+}
