@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../Card/Card";
+import CalendarGrid from "../CalendarGrid/CalendarGrid";
 
-import { daysInSeptember, daysNames, hours } from "../../data/data";
+import { hours } from "../../data/data";
 
 import "./CardCalendar.scss";
 
@@ -32,28 +33,9 @@ const CardCalendar = () => {
               </div>
             </div>
           </div>
-          <div className="card__calendar-content-days-grid">
-            {daysNames
-              ? daysNames.map(dayName => (
-                  <div
-                    key={dayName}
-                    className="card__calendar-content-days-grid--day-name"
-                  >
-                    {dayName}
-                  </div>
-                ))
-              : null}
-            {daysInSeptember
-              ? daysInSeptember.map(day => (
-                  <div
-                    key={day}
-                    className="card__calendar-content-days-grid--day"
-                  >
-                    {day}
-                  </div>
-                ))
-              : null}
-          </div>
+
+          <CalendarGrid />
+
           <div className="card__calendar-content-timezone">
             <div className="card__calendar-content-icon-container">
               <FontAwesomeIcon
