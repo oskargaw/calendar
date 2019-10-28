@@ -8,7 +8,7 @@ import {
 
 import Card from "../components/Card/Card";
 
-import { daysInSeptember, daysNames } from "../data/daysInSeptember";
+import { daysInSeptember, daysNames, hours } from "../data/daysInSeptember";
 
 import webSummitLogo from "../img/web-summit-logo.png";
 
@@ -127,9 +127,16 @@ const Homepage = () => {
             <div className="card__calendar-content-title">
               Friday, September 20
             </div>
-            <div>
-              {daysInSeptember
-                ? daysInSeptember.map(day => <div key={day}>{day}</div>)
+            <div className="card__calendar-content-hours-container">
+              {hours
+                ? hours.map(hour => (
+                    <div
+                      key={hour}
+                      className="card__calendar-content-hours-item"
+                    >
+                      {hour}
+                    </div>
+                  ))
                 : null}
             </div>
           </div>
